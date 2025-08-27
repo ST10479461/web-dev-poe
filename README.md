@@ -1,4 +1,3 @@
-# web-dev-poe
 # Homemade Delights Website
 
 A 5-page responsive website for Homemade Delights Bakery.

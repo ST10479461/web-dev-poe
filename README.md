@@ -17,14 +17,23 @@ A 5-page responsive website for Homemade Delights Bakery.
 - Instagram link
 - Product gallery with placeholder images: hero.jpg, cake.jpg, donut.jpg, bread.jpg
 
-## How to Add Your Own Photos
-1. Place your photos inside the `images/` folder.
-2. Rename them to:
-   - hero.jpg
-   - cake.jpg
-   - donut.jpg
-   - bread.jpg
-3. Refresh your browser to see your photos live.
+
+
+## Changelog
+
+### Part 2 Updates (CSS Styling & Responsive Design)
+- Added CSS reset for cross-browser consistency.
+- Established base typography hierarchy using rem units (h1, h2, p).
+- Improved navigation links with hover and focus states.
+- Created responsive product gallery using Flexbox with wrap support.
+- Implemented responsive design:
+  - Tablet breakpoint (max-width: 768px): adjusted product gallery to 2 columns.
+  - Mobile breakpoint (max-width: 480px): stacked navigation links and product items.
+- Added smooth hover effects and transitions for product images.
+- Updated footer and hero image styling for consistency.
+- Replaced px units with rem/% for better scalability.
+
+
 
 ---
 © Homemade Delights 2025

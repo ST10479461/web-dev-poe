@@ -1,47 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homemade Delights</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products – Homemade Delights</title>
+    <meta name="description" content="Browse our delicious homemade baked goods, treats, cakes, pastries, and more. Fresh, handmade, and crafted with love.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+
+<!-- ===== HEADER + MENU ===== -->
+<header>
     <h1>Homemade Delights</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="enquiry.html">Enquiry</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html"><img src="images/home-icon.png" alt="Home Icon"> Home</a>
+      <a href="about.html"><img src="images/about-icon.png" alt="About Icon"> About</a>
+      <a href="products.html"><img src="images/products-icon.png" alt="Products Icon"> Products</a>
+      <a href="enquiry.html"><img src="images/enquiry-icon.png" alt="Enquiry Icon"> Enquiry</a>
+      <a href="contact.html"><img src="images/contact-icon.png" alt="Contact Icon"> Contact</a>
     </nav>
-  </header>
-  <main>
+</header>
 
-  <section>
-    <h2>Our Products</h2>
-    <div class="product-gallery">
-      <div class="product-item">
-        <img src="images/cake.jpg" alt="Custom cake from Homemade Delights">
-        <p><strong>Custom Cakes</strong> – For birthdays, weddings, and special occasions.</p>
-      </div>
-      <div class="product-item">
-        <img src="images/donut.jpg" alt="Freshly made donuts from Homemade Delights">
-        <p><strong>Donuts & Pastries</strong> – Freshly fried and baked daily.</p>
-      </div>
-      <div class="product-item">
-        <img src="images/bread.jpg" alt="Fresh bread from Homemade Delights">
-        <p><strong>Breads & Rolls</strong> – Traditional recipes baked to perfection.</p>
-      </div>
-    </div>
-  </section>
+<main>
 
-  </main>
-  <footer>
-    <p>&copy; <span id="year"></span> Homemade Delights. All rights reserved.</p>
-    <p>Follow us on Instagram: <a href="https://www.instagram.com/homemadedelights59/" target="_blank">@homemadedelights59</a></p>
-  </footer>
+    <!-- ===== SEARCH BAR ===== -->
+    <section>
+        <h2>Search Products</h2>
+        <input type="text" id="product-search" placeholder="Search products…">
+    </section>
+
+    <!-- ===== PRODUCT GRID ===== -->
+    <section class="products-section">
+        <h2>Available Items</h2>
+        <div class="products-grid">
+
+            <div class="product-card" data-name="Chocolate Cake" data-tags="cake chocolate sweet dessert">
+                <img src="images/chocolate-cake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and moist chocolate sponge topped with creamy icing.</p>
+                <p class="price">R120</p>
+            </div>
+
+            <div class="product-card" data-name="Blueberry Muffins" data-tags="muffin fruity pastry breakfast">
+                <img src="images/blueberry-muffins.jpg" alt="Blueberry Muffins">
+                <h3>Blueberry Muffins</h3>
+                <p>Soft, fluffy muffins packed with real blueberries.</p>
+                <p class="price">R45</p>
+            </div>
+
+            <div class="product-card" data-name="Vanilla Cupcakes" data-tags="cupcake dessert birthday sweet">
+                <img src="images/vanilla-cupcakes.jpg" alt="Vanilla Cupcakes">
+                <h3>Vanilla Cupcakes</h3>
+                <p>Classic vanilla cupcakes with buttercream frosting.</p>
+                <p class="price">R30</p>
+            </div>
+
+            <div class="product-card" data-name="Banana Bread" data-tags="bread loaf banana sweet comfort">
+                <img src="images/banana-bread.jpg" alt="Banana Bread">
+                <h3>Banana Bread</h3>
+                <p>Moist banana loaf with a golden crust and soft center.</p>
+                <p class="price">R55</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="images/gallery1.jpg" alt="Baked treats" class="gallery-img">
+            <img src="images/gallery2.jpg" alt="Display of cakes" class="gallery-img">
+            <img src="images/gallery3.jpg" alt="Cupcake assortment" class="gallery-img">
+            <img src="images/gallery4.jpg" alt="Custard Tart" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- ===== ACCORDION ===== -->
+    <section>
+        <h2>More Information</h2>
+        <div class="accordion">
+            <div class="accordion-header">Delivery Options</div>
+            <div class="accordion-body">
+                <p>Local delivery available within 10km radius. Pick-up also offered.</p>
+            </div>
+
+            <div class="accordion-header">Custom Orders</div>
+            <div class="accordion-body">
+                <p>We accept custom requests for cakes, cupcakes, and event catering.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TABS ===== -->
+    <section>
+        <h2>Categories</h2>
+        <div class="tabs">
+            <button data-tab-target="#cakes" class="active">Cakes</button>
+            <button data-tab-target="#pastries">Pastries</button>
+            <button data-tab-target="#specials">Specials</button>
+        </div>
+
+        <div id="cakes" class="tab-content active">
+            <p>Freshly baked cakes made to order.</p>
+        </div>
+
+        <div id="pastries" class="tab-content">
+            <p>Light, flaky pastries baked daily.</p>
+        </div>
+
+        <div id="specials" class="tab-content">
+            <p>Check out our weekly specials and seasonal items!</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Homemade Delights</p>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="caption"></div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+
 </body>
 </html>

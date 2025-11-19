@@ -35,5 +35,30 @@ A 5-page responsive website for Homemade Delights Bakery.
 
 
 
+## Part 3 Updates
+
+### JavaScript Enhancements
+- Added accordion, tabs, and dynamic lightbox gallery
+- Added product search filter
+- Added AJAX-style form submission + validation
+- Added modal confirmation popup
+
+### SEO Improvements
+- Added robots.txt
+- Added sitemap.xml
+- Improved meta descriptions and titles
+- Added alt text guidance and image optimization notes
+
+### Forms
+- Contact & enquiry forms now use JS validation with modals
+- Added required fields, placeholders, and input patterns
+
+### Repo Maintenance
+- Updated changelog and documentation
+
+
+
+
+
 ---
 © Homemade Delights 2025

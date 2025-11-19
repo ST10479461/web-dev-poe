@@ -8,15 +8,35 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
+<div id="modal-confirm">
+    <div class="modal-box">
+        <h3>Form submitted!</h3>
+        <p>Your information has been received.</p>
+        <button class="close-modal">Close</button>
+    </div>
+</div>
+
   <header>
-    <h1>Homemade Delights</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="enquiry.html">Enquiry</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <h1>Homemade Delights</h1>
+  <nav>
+    <a href="index.html">
+      <img src="images/home-icon.png" alt="Home Icon"> Home
+    </a>
+    <a href="about.html">
+      <img src="images/about-icon.png" alt="About Icon"> About
+    </a>
+    <a href="products.html">
+      <img src="images/products-icon.png" alt="Products Icon"> Products
+    </a>
+    <a href="enquiry.html">
+      <img src="images/enquiry-icon.png" alt="Enquiry Icon"> Enquiry
+    </a>
+    <a href="contact.html">
+      <img src="images/contact-icon.png" alt="Contact Icon"> Contact
+    </a>
+  </nav>
+</header>
+
   </header>
   <main>
 
@@ -33,7 +53,10 @@
       <textarea id="message" name="message" required></textarea><br><br>
 
       <button type="submit">Send Enquiry</button>
+	  <form class="ajax-form" novalidate>
     </form>
+	
+
   </section>
 
   </main>
